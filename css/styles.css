@@ -272,3 +272,29 @@ footer {
   border-top: 1px solid #ccc;
   padding: 10px 0;
 }
+
+.left-column {
+  animation: slideFromLeft 1s forwards;
+}
+
+.right-column {
+  animation: slideFromRight 1s forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
